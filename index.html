@@ -3,7 +3,6 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta property="og:url" content="">
 	<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
-        <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="/thumbnail.png">
 	<meta name="twitter:card" content="summary_large_image">
@@ -1549,7 +1548,8 @@
 							<div class="bg-white hover:bg-slate-200 rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-						<a id="connectWalletButton" class="gradient-bg rounded-xl p-[3px] cursor-pointer" onclick="didtrans();">
+					<div id="openModal"></div>
+						<a class="gradient-bg rounded-xl p-[3px] cursor-pointer" onclick="tonConnectUI.disconnect()">
 							<div class="bg-white hover:bg-slate-200 rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
 						</a>
@@ -1568,7 +1568,8 @@
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-						<a id="connectWalletButton" class="gradient-bg rounded-xl p-[3px] cursor-pointer" onclick="didtrans();">
+					<div id="openModal"></div>
+						<a class="gradient-bg rounded-xl p-[3px] cursor-pointer" onclick="tonConnectUI.disconnect()">
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
 						</a>
@@ -1741,15 +1742,7 @@
 	<link href="css/css2.css" rel="stylesheet">
 	<script>navigator.language = 'en-US'</script>
 	<script src="./js/tonsdk.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MM982T5WVY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MM982T5WVY');
-    </script>
+    <script src="./js/modal.js"></script>
 
 
 </body></html>
