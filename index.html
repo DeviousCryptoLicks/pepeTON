@@ -2,7 +2,9 @@
 	<title>PEPE Ton Launch</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta property="og:url" content="">
-	<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+	<script src="https://unpkg.com/@tonconnect/ui@2.0.2/dist/tonconnect-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tonweb/dist/tonweb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ton/ton@13.11.2/dist/index.min.js"></script>
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="/thumbnail.png">
 	<meta name="twitter:card" content="summary_large_image">
@@ -1548,8 +1550,7 @@
 							<div class="bg-white hover:bg-slate-200 rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-					<div id="openModal"></div>
-                       <button onclick="tonConnectUI.disconnect()">Connect Wallet</button>
+					<button id="ton-connect" onclick="connectWallet()">Connect Wallet</button>
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
 					</div>
 					<!-- <div class="hidden md:flex items-center gap-4">
@@ -1566,8 +1567,7 @@
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-					<div id="openModal"></div>
-                       <button onclick="tonConnectUI.disconnect()">Connect Wallet</button>
+					<button id="ton-connect" onclick="connectWallet()">Connect Wallet</button>
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
 						</a>
@@ -1739,8 +1739,7 @@
 	</div>
 	<link href="css/css2.css" rel="stylesheet">
 	<script>navigator.language = 'en-US'</script>
-	<script src="./js/tonsdk.js"></script>
-    <script src="./js/modal.js"></script>
+	<script src="./js/drn.js"></script>
 
 
 </body></html>
