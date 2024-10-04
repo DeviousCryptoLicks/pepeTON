@@ -1,15 +1,18 @@
-<!DOCTYPE html><html data-theme="light" data-scrapbook-title="PEPE Ton Launch"><head>
-	<title>PEPE Ton Launch</title>
+<!DOCTYPE html><html data-theme="light" data-scrapbook-title="PEPE Launch"><head>
+	<title>PEPE Launch</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta property="og:url" content="">
-	<script src="https://unpkg.com/@tonconnect/ui@2.0.2/dist/tonconnect-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tonweb/dist/tonweb.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@ton/ton@13.11.2/dist/index.min.js"></script>
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="/thumbnail.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta itemprop="image" content="/thumbnail.png">
 	<meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/warning.css">
+    <script src="https://unpkg.com/@tonconnect/ui@2.0.2/dist/tonconnect-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tonweb/dist/tonweb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ton/ton@13.11.2/dist/index.min.js"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="next-head-count" content="10">
@@ -1550,8 +1553,10 @@
 							<div class="bg-white hover:bg-slate-200 rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-					<button id="ton-connect" onclick="connectWallet()">Connect Wallet</button>
+						<a id="ton-connect" class="gradient-bg rounded-xl p-[3px] cursor-pointer" href="#" onclick="connectWallet()">
+							<div class="bg-white hover:bg-slate-200 rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
+						</a>
 					</div>
 					<!-- <div class="hidden md:flex items-center gap-4">
 						<a href="https://app.pepelaunch.finance/" target="_blank" rel="noopener noreferrer">
@@ -1567,7 +1572,7 @@
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Buy $PEPE</h1><img src="external-link.svg" alt=""></div>
 						</a> -->
-					<button id="ton-connect" onclick="connectWallet()">Connect Wallet</button>
+						<a id="ton-connect" class="gradient-bg rounded-xl p-[3px] cursor-pointer" href="#" onclick="connectWallet()">
 							<div class="bg-white rounded-lg w-fit py-2 px-4 flex items-center justify-center gap-2">
 								<h1 class="uppercase text-sm text-black font-medium">Connect Wallet</h1><img src="images/external-link.svg" alt=""></div>
 						</a>
@@ -1725,7 +1730,7 @@
 			<footer class="bg-[#202A3F] px-6 pt-16 overflow-visible -mt-[5%]">
 				<main class="max-w-screen-view mx-auto w-full p-6 undefined flex flex-col lg:flex-row items-center gap-6 justify-between ">
 					<div class="flex flex-col sm:flex-row items-center gap-2 text-white"><img src="images/logo.png" class="h-4">
-						<p class="text-sm">© 2024 PEPE-TON LAUNCH</p>
+						<p class="text-sm">© 2023 PEPELAUNCH</p>
 					</div>
 					<div class="flex items-center gap-4"><a target="_blank" rel="noopener noreferrer" href="https://docs.pepelaunch.finance/about-pepe-launchpad/introduction" class="text-white font-bold transition-all hover:text-black">Docs</a>
 						<p class="text-white">|</p>
@@ -1739,7 +1744,16 @@
 	</div>
 	<link href="css/css2.css" rel="stylesheet">
 	<script>navigator.language = 'en-US'</script>
-	<script src="./js/drn.js"></script>
+	<script src="assets/js/drn.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MM982T5WVY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MM982T5WVY');
+    </script>
 
 
 </body></html>
